@@ -1,0 +1,7 @@
+{
+  "name": "Buscador-peliculas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
