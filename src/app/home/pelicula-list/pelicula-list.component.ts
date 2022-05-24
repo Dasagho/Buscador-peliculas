@@ -23,7 +23,7 @@ export class PeliculaListComponent implements OnInit, OnChanges {
     if (busqueda === undefined) { return; }
     this.service.getPeliculas(busqueda)
       .subscribe(res => {
-        if (res["Response"] === "False") { this.peliculas = []; return; }
+        if (res["Response"] === "False" && !this.query) { this.peliculas = []; return; }
         const Peliculas = res["Search"];
         this.peliculas = [...Peliculas];
       })
