@@ -1,0 +1,6 @@
+<ion-item>
+  <ion-label position="floating">Pelicula</ion-label>
+  <ion-input placeholder="Buscar..." type="text" [(ngModel)]="busqueda">
+  </ion-input>
+</ion-item>
+<app-pelicula-list [query]="busqueda"></app-pelicula-list>
